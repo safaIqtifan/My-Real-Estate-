@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.AddPropertyActivity">
+
+    <include
+        android:id="@+id/bar"
+        layout="@layout/item_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        app:layout_constraintBottom_toTopOf="@+id/addPropertyBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/property_location"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <EditText
+                android:id="@+id/propertyLocation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_shap"
+                android:hint="@string/property_location"
+                android:inputType="textPersonName"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColorHint="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/propertyTypeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/property_type"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <Spinner
+                android:id="@+id/propertyTypeArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shap"
+                android:entries="@array/property_type_array" />
+
+            <!--            <EditText-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:background="@drawable/edit_text_shap"-->
+            <!--                android:hint="@string/name"-->
+            <!--                android:inputType="textPersonName"-->
+            <!--                android:paddingStart="@dimen/_8sdp"-->
+            <!--                android:textColorHint="@color/dark_gray" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/property_price"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <EditText
+                android:id="@+id/propertyPrice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_shap"
+                android:hint="@string/property_price"
+                android:inputType="number"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColorHint="@color/dark_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/property_area"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <EditText
+                android:id="@+id/propertyArea"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_shap"
+                android:hint="@string/property_area"
+                android:inputType="number"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColorHint="@color/dark_gray" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/service_fees"
+                android:inputType="number"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <EditText
+                android:id="@+id/serviceFees"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edit_text_shap"
+                android:hint="@string/service_fees"
+                android:inputType="textPersonName"
+                android:paddingStart="@dimen/_8sdp"
+                android:textColorHint="@color/dark_gray" />
+
+            <TextView
+                android:id="@+id/developmentStatusTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/development_status"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <Spinner
+                android:id="@+id/developmentStatusArray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_text_shap"
+                android:entries="@array/development_status_array" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:text="@string/rooms_num"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/text_size5" />
+
+                    <EditText
+                        android:id="@+id/roomsNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_shap"
+                        android:hint="@string/rooms_num"
+                        android:inputType="number"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:textColorHint="@color/dark_gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:text="@string/bathrooms_num"
+                        android:textColor="@color/text_color2"
+                        android:textSize="@dimen/text_size5" />
+
+                    <EditText
+                        android:id="@+id/bathroomsNum"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_shap"
+                        android:hint="@string/bathrooms_num"
+                        android:inputType="number"
+                        android:paddingStart="@dimen/_8sdp"
+                        android:textColorHint="@color/dark_gray" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--            <EditText-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:background="@drawable/edit_text_shap"-->
+            <!--                android:hint="@string/name"-->
+            <!--                android:inputType="textPersonName"-->
+            <!--                android:paddingStart="@dimen/_8sdp"-->
+            <!--                android:textColorHint="@color/dark_gray" />-->
+
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/roomsNum"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:background="@drawable/edit_text_shap"-->
+            <!--                    android:entries="@array/rooms_num"-->
+            <!--                    android:layout_marginEnd="@dimen/_16sdp"/>-->
+
+            <!--                <Spinner-->
+            <!--                    android:id="@+id/bathroomsNum"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:background="@drawable/edit_text_shap"-->
+            <!--                    android:entries="@array/bathrooms_num" />-->
+
+            <!--            </LinearLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addPropertyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border_shap"
+        android:text="@string/next"
+        android:textColor="@color/my_light_primary"
+        android:textSize="@dimen/text_size8"
+        android:textStyle="bold"
+        android:padding="@dimen/_8sdp"
+        android:layout_margin="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/accountType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

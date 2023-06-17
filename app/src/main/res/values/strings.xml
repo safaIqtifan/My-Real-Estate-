@@ -1,3 +1,166 @@
 <resources>
+
     <string name="app_name">My Real Estate</string>
+
+
+    <string name="signin">تسجيل الدخول</string>
+    <string name="helloWelcomeBack">مرحبا بك من جديد , سجل دخولك!</string>
+    <string name="email">aliahmad@gmail.com</string>
+    <string name="password">كلمة المرور</string>
+    <string name="password0">.....</string>
+    <string name="email_phone">البريد الإلكتروني / الهاتف</string>
+    <string name="SignIn">تسجيل دخول</string>
+    <string name="not_have_account">ليس لديك حساب ؟</string>
+    <string name="signup">تسجيل إشتراك</string>
+    <string name="or">أو</string>
+    <string name="google_signIn">تسجيل دخول من خلال جوجل</string>
+    <string name="google_signup">تسجيل إشتراك من خلال جوجل</string>
+    <string name="new_account">إنشاء حساب جديد</string>
+    <string name="WelcomeBack">مرحبا بك .</string>
+    <string name="name">الاسم</string>
+    <string name="confirm_password">تأكيد كلمة المرور</string>
+    <string name="email_text">البريد الالكتروني</string>
+    <string name="mobile_number">رقم الموبايل</string>
+    <string name="mobile_number_hint"> 2393 6582 12 +20</string>
+    <string name="address">العنوان</string>
+    <string name="have_account">هل لديك حساب بالفعل؟</string>
+    <string name="login_as">سجل  كـ</string>
+    <string name="seller_buyer">بائع/مشتري</string>
+    <string name="marketer">مسوق</string>
+    <string name="company">شركة تسويق عقارات</string>
+    <string name="signUp">تسجيل إشتراك</string>
+    <string name="forgotPassword">نسيت كلمة المرور؟</string>
+
+    <string name="success_add">تمت إضافة البيانات بنجاح</string>
+    <string name="fail_add_data">فشل بإضافة البيانات</string>
+    <string name="fail_get_data">فشل بجلب البيانات</string>
+    <string name="fail_to_login">خطأ ببيانات تسجيل الدخول</string>
+    <string name="title_home">الرئيسية</string>
+    <string name="title_order">الطلبات</string>
+    <string name="title_notifications">الاشعارات</string>
+    <string name="title_my_account">حسابي</string>
+    <string name="search">بحث</string>
+    <string name="property_type">نوع العقار</string>
+    <string name="property_price">سعر العقار</string>
+    <string name="price">السعر</string>
+    <string name="category">الفئة</string>
+    <string name="bedrooms">غرف النوم</string>
+    <string name="code_number">رقم تعريفي للعقار</string>
+    <string name="property_area">مساحة العقار</string>
+    <string name="property_location">موقع العقار</string>
+    <string name="service_fees">رسوم الخدمات</string>
+    <string name="development_status">حالة تطوير العقار</string>
+    <string name="property_status">حالة العقار</string>
+    <string name="property_new">جديد</string>
+    <string name="middle">متوسط</string>
+    <string name="old">قديم</string>
+    <string name="property_category">فئة العقار</string>
+    <string name="lease_term">مدة الإيجار</string>
+    <string name="property_payment">أقساط العقار</string>
+    <string name="rent">إيجار</string>
+    <string name="sale">بيع</string>
+    <string name="yearly">سنوياً</string>
+    <string name="monthly">شهرياً</string>
+    <string name="weekly">أسبوعياً</string>
+    <string name="have_payment">عليه أقساط</string>
+    <string name="no_payment">لايوجد أقساط</string>
+    <string name="rooms_num">عدد الغرف</string>
+    <string name="bathrooms_num">عدد الحمامات</string>
+    <string name="add_photos">أضف صور للعقار</string>
+    <string name="add">اضافة</string>
+    <string name="pick_photos">انقر لإختيار الصور</string>
+    <string name="add_property_features">أضف مميزات العقار</string>
+    <string name="choose_property_features">اختر مميزات العقار</string>
+    <string name="property_features">مميزات العقار</string>
+    <string name="new_property_feature">ميزة جديدة للعقار</string>
+    <string name="add_property">إضافة عقار</string>
+    <string name="complete_deal">طلب إتمام صفقة</string>
+    <string name="negotiate">تفاوض</string>
+    <string name="minimum_num_photos">الحد الأدنى من إضافة الصور  هو 6 صور</string>
+    <string name="next">التالي</string>
+    <string name="add_new_features">+ إضافة ميزة جديدة</string>
+
+
+    <string-array name="property_type_array">
+        <item>نوع العقار</item>
+        <item>شقة </item>
+        <item>شاليه </item>
+        <item>فيلا</item>
+        <item>عمارة كاملة</item>
+    </string-array>
+
+    <string-array name="development_status_array">
+        <item>اختر حالة تطوير العقار</item>
+        <item>جاهز</item>
+        <item>تحت الإنشاء</item>
+        <item>قطعة أرض </item>
+    </string-array>
+
+    <string-array name="rooms_num">
+        <item>عدد الغرف</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="bathrooms_num">
+        <item>عدد الحمامات</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="apartment_features">
+        <item>جراج</item>
+        <item>القرب من الخدمات</item>
+    </string-array>
+
+    <string-array name="architecture_features">
+        <item>توافر الخدمات</item>
+        <item>جراج</item>
+        <item>روف</item>
+    </string-array>
+
+    <string-array name="chalet_features">
+        <item>سور</item>
+        <item>صف اول علي المسطح</item>
+        <item>صف ثاني علي المسطح</item>
+        <item>جنينة</item>
+        <item>صف ثالث علي المسطح</item>
+        <item>حمام سباحة</item>
+    </string-array>
+
+    <string-array name="house_features">
+        <item>جنينة</item>
+        <item>جراج</item>
+        <item>سور</item>
+        <item>القرب من الخدمات</item>
+    </string-array>
+
+    <string-array name="key_features">
+        <item>وجود اسانسير</item>
+        <item>مباني حديثة</item>
+        <item>يطل علي مسطح مائي</item>
+        <item>الخصوصية</item>
+        <item>شارع عمومي</item>
+        <item>الأمن</item>
+        <item>شارع جانبي</item>
+        <item>توافر المواصلات</item>
+    </string-array>
+
+    <string-array name="Land_features">
+        <item>زراعية</item>
+        <item> مسموح بالبناء</item>
+    </string-array>
+
+    <string-array name="Villa_features">
+        <item>سور</item>
+        <item>جراج</item>
+        <item>جنينة</item>
+        <item>القرب من الخدمات</item>
+        <item>حمام سباحة</item>
+    </string-array>
+
 </resources>

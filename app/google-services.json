@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "436230144346",
+    "project_id": "clkmlk",
+    "storage_bucket": "clkmlk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436230144346:android:625155c1fa022a415e7363",
+        "android_client_info": {
+          "package_name": "com.hom.myrealestate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436230144346-hsrd9i8khkt7o0scmpsq5l4kvu8tuvkg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hom.myrealestate",
+            "certificate_hash": "c79b0ee57fd1f901b466787d50e8b3828878f965"
+          }
+        },
+        {
+          "client_id": "436230144346-ej865bul6u68h4rbt5ejvl32ndvafvbf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc4s-SLbIxQ2-PW77nCftBlelWY7BKNjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436230144346-e6m1aj3kgs99c0voam3r79r6083mk77t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

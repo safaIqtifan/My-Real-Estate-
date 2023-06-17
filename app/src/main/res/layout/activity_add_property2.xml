@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.AddPropertyActivity2">
+
+    <include
+        android:id="@+id/bar"
+        layout="@layout/item_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.024"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        app:layout_constraintBottom_toTopOf="@+id/addPropertyBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/propertyStatusTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/property_status"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <RadioGroup
+                android:id="@+id/propertyStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/propertyNew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:text="@string/property_new" />
+
+                <RadioButton
+                    android:id="@+id/propertyMiddle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:text="@string/middle" />
+
+                <RadioButton
+                    android:id="@+id/propertyOld"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/old" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/propertyCategoryTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/property_category"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <RadioGroup
+                android:id="@+id/propertyCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/propertyRent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:text="@string/rent" />
+
+                <RadioButton
+                    android:id="@+id/propertySale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sale" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/leaseTermTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/lease_term"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <RadioGroup
+                android:id="@+id/leaseTerm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/propertyYearly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:text="@string/yearly" />
+
+                <RadioButton
+                    android:id="@+id/propertyMonthly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:text="@string/monthly" />
+
+                <RadioButton
+                    android:id="@+id/propertyWeekly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:text="@string/weekly" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/propertyPaymentTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/property_payment"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <RadioGroup
+                android:id="@+id/propertyPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/propertyHavePayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:text="@string/have_payment" />
+
+                <RadioButton
+                    android:id="@+id/propertyNoPayment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/no_payment" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/pickPhotos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/add_photos"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <LinearLayout
+                android:id="@+id/pickImag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/add_imag_border"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/light_primary"
+                    android:src="@drawable/add_photos_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:hint="@string/pick_photos"
+                    android:paddingStart="@dimen/_8sdp"
+                    android:textColor="@color/text_color2"
+                    android:textSize="@dimen/text_size5" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/propertyImgRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="8"
+                tools:listitem="@layout/item_property_imag" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:gravity="end"
+                android:text="@string/minimum_num_photos"
+                android:textColor="@color/dark_gray"
+                android:textSize="@dimen/text_size3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:text="@string/add_property_features"
+                android:textColor="@color/text_color2"
+                android:textSize="@dimen/text_size5" />
+
+            <!--            <EditText-->
+            <!--                android:id="@+id/propertyLocation"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="match_parent"-->
+            <!--                android:background="@drawable/edit_text_shap"-->
+            <!--                android:hint="@string/add_property_features"-->
+            <!--                android:inputType="textPersonName"-->
+            <!--                android:paddingStart="@dimen/_8sdp"-->
+            <!--                android:textColorHint="@color/dark_gray" />-->
+
+            <EditText
+                android:id="@+id/propertyFeaturesAdded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/add_imag_border"
+                android:gravity="start"
+                android:hint="@string/property_features"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:enabled="false"
+                android:padding="@dimen/_10sdp" />
+            <!--                android:enabled="false"-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/propertyAddedFeaturesRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:padding="@dimen/_8sdp"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:itemCount="8"
+                android:visibility="gone"
+                tools:listitem="@layout/item_property_features"
+                android:background="@drawable/add_imag_border"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/propertyFeaturesRv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="vertical"
+                tools:listitem="@layout/item_property_features" />
+
+            <TextView
+                android:id="@+id/addNewFeatures"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:background="@drawable/button_round"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:text="@string/add_new_features"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size4" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addPropertyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/button_shap"
+        android:padding="@dimen/_8sdp"
+        android:text="@string/add_property"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size8"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/accountType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,7 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
+        android:name=".classes.RootApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -13,7 +18,22 @@
         android:theme="@style/Theme.MyRealEstate"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".Activitys.AddPropertyActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.PropertyDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.AddPropertyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.HomePageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activitys.SingUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activitys.SingInActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

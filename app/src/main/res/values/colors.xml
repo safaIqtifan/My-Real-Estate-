@@ -2,4 +2,23 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="my_light_primary">#089185</color>
+    <color name="light_primary">#E3F9F7</color>
+    <color name="primary">#161A20</color>
+
+    <color name="gray">#E3E2E2</color>
+    <color name="light_gray">#F8F8F8</color>
+    <color name="dark_gray">#BCBABA</color>
+<!--    <color name="dark_gray">#BFBFBF</color>-->
+    <color name="tran_gray">#9CF8F8F8</color>
+
+    <color name="text_color1">#212529</color>
+    <color name="text_color2">#232323</color>
+    <color name="text_color3">#161A20</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="category">#E3F9F7</color>
+
 </resources>
